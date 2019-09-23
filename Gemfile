@@ -4,8 +4,13 @@ source 'https://rubygems.org'
 
 ruby '2.6.4'
 
-gem 'guard'
-gem 'guard-rspec'
-gem 'pry'
-gem 'rspec'
-gem 'rubocop'
+gem 'sinatra'
+
+group :test, :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'pry'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'rubocop'
+end
